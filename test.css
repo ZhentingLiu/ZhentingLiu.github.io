@@ -1,0 +1,656 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: white;
+  width: 100%;
+  min-width: 488px;
+}
+.title {
+  background: url('zzpic17327.jpg');
+  overflow: hidden;
+  background-size: cover;
+  background-position-y: 0;
+  background-position-x: center;
+  height: 950px;
+}
+.title .shadow {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  overflow: hidden;
+}
+.title .title-body {
+  color: white;
+  transform-style: preserve-3d;
+  margin: 190px 0;
+}
+.title .title-body h1 {
+  position: relative;
+  top: 0px;
+  left: -40px;
+  transition: all 1.5s cubic-bezier(0.42, 0, 0.29, 1.57);
+  text-align: center;
+  font-size: 3.8em;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: inherit;
+}
+.title .title-body p {
+  position: relative;
+  transition: all 1.5s;
+  text-align: center;
+  margin: 100px auto;
+  max-width: 960px;
+  color: #ddd;
+  line-height: 1.8em;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+.navbar-header a {
+  margin: 11px 5px;
+  text-decoration: none;
+  font-size: 35px;
+}
+.navbar {
+  background: none;
+  border: none;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  top: 30px;
+}
+.navbar-toggle {
+  background-color: #ccc;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #eee;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.navbar-default .navbar-nav > li a:hover {
+  color: white;
+  background: #0079C1;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #333;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li a:hover {
+  color: white;
+  background: #0079C1;
+}
+.navbar-collapse.collapse {
+  background: transparent;
+}
+.navbar-collapse.collapse.in {
+  background: white;
+  transition: 1s;
+}
+.navbar-collapse.collapse.in a {
+  color: #555;
+}
+.dropdown-menu {
+  background: white;
+  color: #eee;
+}
+.dropdown-menu li:hover {
+  background: #0079C1;
+}
+.share {
+  float: right;
+  top: 20px;
+}
+.share ul {
+  list-style: none;
+  float: right;
+  width: 60%;
+}
+.share ul li {
+  float: left;
+  position: relative;
+  left: 1000px;
+  transition: all 1.5s cubic-bezier(0.42, 0, 0.29, 1.57);
+}
+.share ul li .eml {
+  float: right;
+  color: #ddd;
+  letter-spacing: 1px;
+}
+.share ul li .eml i {
+  border: none;
+  margin: 0 1px;
+}
+.share ul li .facebook i {
+  border: 1px solid #9e9e9e;
+  background: #9e9e9e;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+.share ul li .facebook :hover {
+  background: white;
+  color: #9e9e9e;
+}
+.share ul li .twitter i {
+  border: 1px solid #9e9e9e;
+  background: #9e9e9e;
+  color: white;
+  padding: 5px 6px;
+  border-radius: 50%;
+}
+.share ul li .twitter :hover {
+  background: white;
+  color: #9e9e9e;
+}
+.share ul li .google i {
+  border: 1px solid #9e9e9e;
+  background: #9e9e9e;
+  color: white;
+  padding: 5px 4px;
+  border-radius: 50%;
+}
+.share ul li .google :hover {
+  background: white;
+  color: #9e9e9e;
+}
+.share ul li .linkedin {
+  position: relative;
+  top: -1px;
+}
+.share ul li .linkedin i {
+  padding: 6px 7px;
+  border: 1px solid #9e9e9e;
+  background: #9e9e9e;
+  color: white;
+  border-radius: 50%;
+}
+.share ul li .linkedin :hover {
+  background: white;
+  color: #9e9e9e;
+}
+.bigbox ul {
+  list-style: none;
+  text-align: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.bigbox ul li {
+  margin: 40px 0;
+  transition: all 1.5s cubic-bezier(0.42, 0, 0.29, 1.57);
+}
+.bigbox ul li .Choosebox {
+  width: 100%;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+.bigbox ul li .Choosebox i {
+  border: 1px solid #337ab7;
+  padding: 15px;
+  border-radius: 50%;
+  background: #337ab7;
+  color: white;
+}
+.bigbox ul li .Choosebox p {
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: #707579;
+}
+.animation {
+  transform: translateY(100px);
+}
+.animation1 {
+  transform: rotateY(90deg);
+}
+.animation2 {
+  transform: scale(0);
+}
+.Choose-bottom img {
+  width: 100%;
+  margin: 40px 0;
+  position: relative;
+  transition: all 1s;
+}
+.Choose-bottom p {
+  margin: 20px 0 20px 0;
+  width: 100%;
+  color: #999;
+  letter-spacing: 2px;
+}
+.Choose-bottom h2 {
+  float: left;
+  text-align: left;
+  margin: 20px 0 20px 0;
+  width: 100%;
+  font-size: 26px;
+  color: #323648;
+  line-height: 32px;
+  letter-spacing: .5px;
+}
+.Choose-bottom span {
+  display: block;
+  font-size: inherit;
+  color: black;
+  float: left;
+  text-align: left;
+  letter-spacing: 2px;
+}
+.Choose-bottom i {
+  color: #0079C1;
+}
+.Agentsbox {
+  background: #f5f5f5;
+}
+.Agentsbox .Agents {
+  margin: 0 auto;
+}
+.Agentsbox .Agents ul {
+  width: 100%;
+}
+.Agentsbox .Agents ul .smallbox {
+  background: white;
+  box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, 0.1);
+  padding: 30px 0;
+  margin: 0 auto;
+}
+.Agentsbox .Agents ul .smallbox img {
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+  border: 5px solid #f9f9f9;
+  border-radius: 50%;
+  box-shadow: #707579;
+}
+.Agentsbox .Agents ul .smallbox h4 {
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.Agentsbox .Agents ul .smallbox p {
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: #707579;
+}
+h1 {
+  margin: 5px;
+}
+.Travel .box ul {
+  max-width: 1140px;
+}
+.Travel .box div {
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 250px;
+  color: white;
+}
+.Travel .box div .date {
+  background: rgba(0, 0, 0, 0.3);
+}
+.Travel .box .smallbox {
+  background: url(tooopen_sy_15260026060315.jpg);
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+.Travel .box .smallbox1 {
+  background: url(tooopen_sy_15260526586753.jpg);
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+.Travel .box .smallbox2 {
+  background: url(tooopen_sy_15260826864607.jpg);
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+.Travel .box .smallbox3 {
+  background: url(tooopen_sy_152559255963837.jpg);
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+.Travel .box .smallbox4 {
+  background: url(tooopen_sy_135229522959152.jpg);
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+.Travel .box .smallbox5 {
+  background: url(tooopen_sy_03032332354417.jpg);
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+.Travel .box .smallbox6 {
+  background: url(tooopen_sy_231706436253.jpg);
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+.Travel .box .smallbox7 {
+  background: url(tooopen_sy_152513251324863.jpg);
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+.Travel li :hover .date {
+  display: block;
+}
+.Travel li .date {
+  position: relative;
+}
+.Travel li .date .item {
+  padding: 30px;
+}
+.Travel li .date .item h3 {
+  text-align: left;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+.Travel li .date .item .top {
+  width: 100%;
+  height: 20px;
+  text-align: left;
+}
+.Travel li .date .item .bottom {
+  width: 100%;
+  height: 20px;
+  position: relative;
+  top: 90px;
+}
+.Travel li .date .item .bottom .sum {
+  float: left;
+}
+.Packages {
+  background: rgba(128, 122, 122, 0.185);
+}
+.Packages .bbox {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.Packages .small {
+  transition: all 1.5s cubic-bezier(0.42, 0, 0.29, 1.57);
+  margin: 40px 0;
+}
+.Packages .small .span {
+  background: white;
+  border: 1px solid transparent;
+  border-radius: 8%;
+  margin: 40px auto;
+}
+.Packages .small .span p {
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: #707579;
+  padding: 0 15px;
+}
+.Packages .small .span li {
+  text-align: left;
+  margin: 40px 40px 40px 0;
+  position: relative;
+  left: 50px;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+.Packages .small h1 {
+  text-align: left;
+  left: 15px;
+  position: relative;
+}
+.Packages .small h2 {
+  left: 50px;
+  position: relative;
+}
+.Packages .small p {
+  text-align: center;
+}
+.Packages .small a {
+  position: relative;
+  top: 35px;
+  margin: 30px auto;
+}
+h1 {
+  text-align: center;
+  margin: 40px ;
+}
+.Late {
+  overflow: hidden;
+}
+.Late .head h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+.Late .body {
+  margin: 0 auto;
+}
+.Late .body ul {
+  max-width: 1140px;
+}
+.Late .body li img {
+  width: 100%;
+}
+.Late .body li {
+  list-style: none;
+  float: left;
+}
+.Late .body li h1 a {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+.Late span {
+  margin: 10px 5px;
+  color: #919598;
+  letter-spacing: 1px;
+}
+.Late p {
+  letter-spacing: 1px;
+  margin: 10px 0;
+  text-align: left;
+  font-size: 17px;
+  color: #707579;
+}
+.Late .small {
+  padding: 0 30px;
+}
+.Late .small h1 {
+  text-align: left;
+  margin: 0;
+}
+.Go {
+  width: 100%;
+  background: #0079C1;
+}
+.Go h1 {
+  color: white;
+  padding-top: 120px;
+}
+.Go .box {
+  background: none;
+  max-width: 1140px;
+  margin: 58px auto;
+  text-align: left;
+  float: none;
+}
+.Go .box p {
+  font-size: 17px;
+  line-height: 1.8em;
+  letter-spacing: 1px;
+  color: #b3c2ca;
+  margin: 40px 0;
+}
+#Name {
+  width: 200px;
+  height: 40px;
+  background: none;
+  color: white;
+  border: 1px solid #b3c2ca;
+}
+#Tel {
+  width: 200px;
+  height: 40px;
+  background: none;
+  color: white;
+  border: 1px solid #b3c2ca;
+}
+.Go input {
+  width: 200px;
+  height: 44px;
+  background: white;
+  color: #0079c1;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-bottom: 80px;
+  margin: 0 5px 50px 5px;
+}
+input::-webkit-input-placeholder {
+  color: #b3c2ca;
+}
+.Contact {
+  overflow: hidden;
+}
+.Contact h1 {
+  margin: 60px 0;
+}
+.Contact .box {
+  margin: 0 auto;
+  position: relative;
+}
+.Contact .box .left {
+  float: left;
+}
+.Contact .box .right {
+  border: 3px dotted #0079c1;
+  height: 400px;
+  margin: 0 0 40px 0;
+}
+.Contact .box .left input {
+  height: 50px;
+  margin: 10px 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+#mes {
+  height: 115px;
+  margin: 10px 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+textarea::-webkit-input-placeholder {
+  color: #b3c2ca;
+}
+.Contact .left #button {
+  width: 130px;
+  float: left;
+  position: relative;
+  color: white;
+  background: #0079C1;
+  border: none;
+  left: 10px;
+}
+.foot {
+  background: #252525;
+  width: 100%;
+  color: #cccccc;
+  overflow: hidden;
+}
+.foot .body {
+  margin: 0 auto;
+}
+.foot .title1 .left {
+  float: left;
+}
+.foot .title1 .right {
+  float: right;
+  margin-top: 60px;
+}
+#foot-email {
+  width: 60%;
+  height: 40px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #707579;
+  color: #707579;
+}
+#button1 {
+  width: 25%;
+  height: 48px;
+  background: #0079c1 ;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+.Tweets {
+  float: left;
+  width: 100%;
+}
+.foot .Tweets .te {
+  width: 100%;
+  /* background: #FFFFFF; */
+  overflow: hidden;
+  position: relative;
+  left: -2000px;
+  transition: all 1.5s cubic-bezier(0.42, 0, 0.29, 1.57);
+}
+.foot .Tweets li {
+  /* width:100%; */
+  list-style: none;
+  /* float: left; */
+  position: relative;
+  left: -40px;
+  /*  */
+}
+.foot .Contact {
+  /* background: #0079C1; */
+  float: left;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+.foot .Tweets .Contact li {
+  float: none;
+  width: 100%;
+  line-height: 30px;
+  letter-spacing: 1px;
+  position: relative;
+  left: 0;
+}
+.test {
+  padding: 10px 10px;
+}
+.test h4 {
+  margin: 47px 0 30px 0;
+}
+.foot .title {
+  background: none;
+}
+.title p {
+  color: #707579;
+}
+.Contact p {
+  color: #707579;
+}
+.Contact li {
+  color: #707579;
+}
+.Contact a {
+  color: #707579;
+  text-decoration: none;
+}
+.Contact a:hover {
+  color: #0079c1;
+}
+h3 {
+  text-align: center;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: .5px;
+  line-height: 32px;
+  color: #fff;
+}
