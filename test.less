@@ -51,10 +51,15 @@ body {
     }
 }
 .navbar-header{
-    a{
+    h2{
+        color: #0079C1;
         margin: 11px 5px;
         text-decoration: none;
-        font-size: 35px;
+        font-size: 40px;
+        span{
+            color: #ccc;
+            font-size: 32px;
+        }
     }
 }
 .navbar{
@@ -223,6 +228,9 @@ body {
         }
         .animation2{
             transform: scale(0);
+        }
+        .animation3{
+            transform: translateX(-500px);
         }
         .Choose-bottom{
             img{
@@ -646,9 +654,7 @@ body {
             width: 100%;
             /* background: #FFFFFF; */
             overflow: hidden;
-            position: relative;
-            left: -2000px;
-            transition: all 1.5s cubic-bezier(0.42, 0, 0.29, 1.57);
+            
         }
         .foot .Tweets li{
             /* width:100%; */
@@ -659,7 +665,8 @@ body {
             /*  */
         }
         .foot .Contact{
-            
+            position: relative;
+            transition: all 1.5s cubic-bezier(0.42, 0, 0.29, 1.57);
             /* background: #0079C1; */
             float: left;
             letter-spacing: 1px;
