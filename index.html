@@ -14,14 +14,14 @@
 <body>
     <div class="title">
         <div class="shadow">
-            <div class="share col-lg-7 col-xs-7 col-xs-offset-7">
+            <div class="share col-lg-6 col-xs-6 col-xs-offset-6">
                 <!-- <ul class="tub"></ul> -->
                 <ul>
-                    <li class="col-lg-1 col-sm-1 col-md-1 col-xs-2"><a class="eml" href=""><i class="fa fa-envelope-open-o">info@example.com</i></a></li>
-                    <li class="col-lg-1 col-sm-1 col-md-1 col-xs-2"><a class="facebook" href=""><i class="fa fa-facebook" style="left: 10px;"></i></a></li>
-                    <li class="col-lg-1 col-sm-1 col-md-1 col-xs-2"><a class="twitter" href=""><i class="fa fa-twitter" style="left: 8px;"></i></a></li>
-                    <li class="col-lg-1 col-sm-1 col-md-1 col-xs-2"><a class="google" href=""><i class="fa fa-google-plus" style="left: 5px;"></i></a></li>
-                    <li class="col-lg-1 col-sm-1 col-md-1 col-xs-2"><a class="linkedin" href=""><i class="fa fa-linkedin" style="left: 8px;"></i></a></li>
+                    <li class="col-lg-1 col-sm-1 col-md-1 col-xs-4 animation4"><a class="eml" href=""><i class="fa fa-envelope-open-o">info@example.com</i></a></li>
+                    <li class="col-lg-1 col-sm-1 col-md-1 col-xs-2 animation4"><a class="facebook" href=""><i class="fa fa-facebook" style="left: 10px;"></i></a></li>
+                    <li class="col-lg-1 col-sm-1 col-md-1 col-xs-2 animation4"><a class="twitter" href=""><i class="fa fa-twitter" style="left: 8px;"></i></a></li>
+                    <li class="col-lg-1 col-sm-1 col-md-1 col-xs-2 animation4"><a class="google" href=""><i class="fa fa-google-plus" style="left: 5px;"></i></a></li>
+                    <li class="col-lg-1 col-sm-1 col-md-1 col-xs-2 animation4"><a class="linkedin" href=""><i class="fa fa-linkedin" style="left: 8px;"></i></a></li>
                 </ul>
             </div>
             <nav class="navbar navbar-default">
@@ -34,7 +34,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <h2 href="" class="fa fa-globe fa-2x">
+                        <h2 href="" class="fa fa-globe fa-4x">
                             <span>Travel World</span>
                         </h2>
                     </div>
@@ -112,7 +112,7 @@
                         <li class="col-xs-12 col-sm-6 col-lg-3 animation">
                             <div class="Choosebox">
                                 <div class="jz">
-                                    <i class="fa fa-cubes fa-2x"></i>
+                                    <i class="fa fa-cubes fa-2x"style="padding:13px 10px 17px 12px"></i>
                                 </div>
                                 <h3>Integer Pulvinar Leo Id Viverra Elit Ipsum</h3>
                                 <p>Integer pulvinar leo idut viver feugiat. Pellentes que libero justo orci fermentum.</p>
@@ -122,7 +122,7 @@
                 </div>
                 <div class="Choose-bottom col-xs-12 col-sm-12 col-lg-12">
                     <div class="left col-xs-12 col-sm-12 col-lg-6 " >
-                        <img src="bpic11426.jpg" class="animation2">
+                        <div class="stage"></div>
                     </div>
                     <div class="right col-xs-12 col-sm-12 col-lg-6" >
                         <p>MOUNT EVEREST</p>
@@ -568,35 +568,9 @@
                                 window.scrollTo(0, 1);
                             }
                             
-                            $(document).ready(function(){
-                                var a,b,c;
-                                a = $(window).height();    //浏览器窗口高度
-                                var group = $(".share li");
-                                $(window).scroll(function(){
-                                    b = $(this).scrollTop();   //页面滚动的高度
-                                    c = group.offset().top;    //元素距离文档（document）顶部的高度
-                                    if(a+b>=c){
-                                        $('.share li').css({
-                                            'left':'0'
-                                        })
-                                    }
-                                });
-                            })
+                        
                             
-                            $(document).ready(function(){
-                                var a,b,c;
-                                a = $(window).height();    //浏览器窗口高度
-                                var group = $(".te");
-                                $(window).scroll(function(){
-                                    b = $(this).scrollTop();   //页面滚动的高度
-                                    c = group.offset().top;    //元素距离文档（document）顶部的高度
-                                    if(a+b>=c){
-                                        $('.te').css({
-                                            'left':'0px'
-                                        })
-                                    }
-                                });
-                            })
+                            
                             
                             function move(){
                                 $('.title-body h1').css({
@@ -651,11 +625,20 @@
                                             $(element).removeClass('animation3')
                                         }
                                     })
+                                    $('.animation4').each(function (index, element) {
+                                        // console.log(element);
+                                        
+                                        if ($(element).offset().top < ($(document).scrollTop() + window.innerHeight - 50)) {
+                                            
+                                            $(element).removeClass('animation4')
+                                        }
+                                    })
                                     $('.navbar-nav > li > a').click(function(){
                                         $('.navbar-nav > li > a').css({
                                             'color':'white'
                                         })
                                     });
+                                    $('.Choose-bottom .stage')
                                 });
                             </script>
                         </body>

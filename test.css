@@ -111,12 +111,11 @@ body {
 .share ul {
   list-style: none;
   float: right;
-  width: 60%;
+  width: 25%;
+  min-width: 200px;
 }
 .share ul li {
   float: left;
-  position: relative;
-  left: 1000px;
   transition: all 1.5s cubic-bezier(0.42, 0, 0.29, 1.57);
 }
 .share ul li .eml {
@@ -191,6 +190,10 @@ body {
   margin: 60px auto;
   padding: 0 20px;
 }
+.bigbox ul li .Choosebox h3 {
+  margin: 20px auto;
+  max-width: 300px;
+}
 .bigbox ul li .Choosebox i {
   border: 1px solid #337ab7;
   padding: 15px;
@@ -202,6 +205,8 @@ body {
   letter-spacing: 1px;
   font-size: 17px;
   color: #707579;
+  margin: 20px auto;
+  max-width: 300px;
 }
 .animation {
   transform: translateY(100px);
@@ -215,17 +220,26 @@ body {
 .animation3 {
   transform: translateX(-500px);
 }
-.Choose-bottom img {
+.animation4 {
+  transform: translateX(400px);
+}
+.Choose-bottom .left {
+  height: 600px;
+}
+.Choose-bottom .left .stage {
   width: 100%;
-  margin: 40px 0;
-  position: relative;
-  transition: all 1s;
+  height: 100%;
+  background: url(bpic11426.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .Choose-bottom p {
   margin: 20px 0 20px 0;
   width: 100%;
   color: #999;
   letter-spacing: 2px;
+  padding: 0;
 }
 .Choose-bottom h2 {
   float: left;
