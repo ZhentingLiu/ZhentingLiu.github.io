@@ -11,7 +11,15 @@
     <link rel="stylesheet" href="test.css">
     <title>主页</title>
 </head>
+
 <body>
+    <!-- <svg class="loading" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-rolling">
+        <circle cx="50" cy="50" fill="none" ng-attr-stroke="{{config.color}}" ng-attr-stroke-width="{{config.width}}" ng-attr-r="{{config.radius}}" ng-attr-stroke-dasharray="{{config.dasharray}}" stroke="#f3dcb2" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138" transform="rotate(82.0958 50 50)">
+            <animateTransform attributeName="transform" type="rotate" attributeType="XML" from="0 50 50" to="360 50 50" keyTimes="0;1" dur="3s" begin="0s" repeatCount="indefinite"></animateTransform>
+        </circle>
+    </svg> -->
+    <img class="svg" src="./5-121204193951.gif" alt="">
+    <i class="fa fa-angle-double-up fa-3x animation5"></i>
     <div class="title">
         <div class="shadow">
             <div class="share col-lg-6 col-xs-6 col-xs-offset-6">
@@ -34,7 +42,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <h2 href="" class="fa fa-globe fa-4x">
+                        <h2 href="" class="fa fa-globe fa-6x">
                             <span>Travel World</span>
                         </h2>
                     </div>
@@ -78,7 +86,7 @@
         <div class="bigbox">
             <div class="Choose tongyong">
                 <div class="Choose-title .col-lg-12 ">
-                    <h1><strong>Why </strong>Choose Us</h1>
+                    <h5>Why <span>Choose Us</span></h5>
                 </div>
                 <div class="Choose-mid">
                     <ul>
@@ -122,7 +130,7 @@
                 </div>
                 <div class="Choose-bottom col-xs-12 col-sm-12 col-lg-12">
                     <div class="left col-xs-12 col-sm-12 col-lg-6 " >
-                        <div class="stage"></div>
+                        <img class="animation2" src="./bpic11426.jpg" alt="">
                     </div>
                     <div class="right col-xs-12 col-sm-12 col-lg-6" >
                         <p>MOUNT EVEREST</p>
@@ -138,7 +146,7 @@
                     </div>
                     <div class="Agentsbox col-xs-12 col-sm-12 col-lg-12">
                         <div class="Agents col-xs-12 col-sm-12 col-lg-12">
-                            <h1><strong>Agents</strong></h1>
+                            <h5>Agents</h5>
                             <ul>
                                 <li class="col-xs-12 col-sm-6 col-lg-3 animation1">
                                     <div class="smallbox">
@@ -188,7 +196,7 @@
                         </div>
                     </div>
                     <div class="Travel col-xs-12 col-sm-12 col-lg-12">
-                        <h1><strong>Travel</strong> With Us</h1>
+                        <h5>Travel<span> With Us</span></h5>
                         <div class="box">
                             <ul>
                                 <li class="col-xs-12 col-sm-6 col-lg-3">
@@ -362,7 +370,7 @@
                     </div>
                     <div class="Packages col-xs-12 col-sm-12 col-lg-12">
                         <div class="head">
-                            <h1><strong>Travel </strong>Packages</h1>
+                            <h5>Travel <span>Packages</span></h5>
                         </div>
                         
                         <div class="bbox">
@@ -415,7 +423,7 @@
                     </div>
                     <div class="Late col-xs-12 col-sm-12 col-lg-12">
                         <div class="head">
-                            <h1><strong>Latest </strong>News Blog</h1>
+                            <h5>Latest <span>News Blog</span></h5>
                         </div>
                         <div class="body">
                             <ul>
@@ -468,7 +476,7 @@
                         </form>
                     </div>
                     <div class="Contact col-xs-12 col-sm-12 col-lg-12">
-                        <div class="box"><h1>Contact Us</h1>
+                        <div class="box"><h5>Contact Us</h5>
                             <form class="left col-xs-12 col-sm-12 col-lg-6">
                                 
                                 <input class="col-xs-12 col-sm-12 col-lg-12" type="text" name="name" id="name1" value="" placeholder="Enter Your Name"/>
@@ -559,29 +567,34 @@
                         <script src="./js/main.js"></script>
                         
                         <script>
-                            // var h1 =document.querySelector('.title-body h1')
+                            var h1 =document.querySelector('.title-body h1')
                             addEventListener("load", function () {
                                 setTimeout(hideURLbar, 0);
                             }, false);
                             
                             function hideURLbar() {
                                 window.scrollTo(0, 1);
-                            }
-                            
-                        
-                            
-                            
-                            
-                            function move(){
-                                $('.title-body h1').css({
-                                    'left':'-40px'
-                                })
-                                $('.title-body p').css({
-                                    'left':'0px'
-                                })
+                            }      
+                            // function move(){
+                            //     $('.title-body h1').css({
+                            //         'left':'-40px'
+                            //     })
+                            //     $('.title-body p').css({
+                            //         'left':'0px'
+                            //     })
+                                
+                            // }
+                            // document.onreadystatechange = function () {
+                            //     if(document.readyState === "complete"){
+                            //         $('svg').addClass('active')
+                            //     }
+                            // }
+                            window.onload=function(){
+                                
+                                // $(this).remove(document.querySelector('svg'))
+                                $('.svg').addClass('active')
                                 
                             }
-                            
                         </script>
                         
                         <script>
@@ -633,12 +646,54 @@
                                             $(element).removeClass('animation4')
                                         }
                                     })
+                                    $('.animation5').each(function (index, element) {
+                                        setInterval(() => {
+                                            $(element).removeClass('animation5')
+                                            setTimeout(() => {
+                                                $(element).addClass('animation5')
+                                            }, 4000);
+                                        }, 5000);
+                                        
+                                    })
                                     $('.navbar-nav > li > a').click(function(){
                                         $('.navbar-nav > li > a').css({
                                             'color':'white'
                                         })
                                     });
-                                    $('.Choose-bottom .stage')
+                                    var defaults={
+                                        oid:'.title',
+                                    };
+                                    if($(window).width()>1200){
+                                        var options=$.extend(defaults,options)
+                                        
+                                        // var ev=ev||window.event;
+                                        var mousey=$(document).scrollTop();
+                                        
+                                        
+                                        
+                                        var place=1300+mousey;
+                                        $(''+options.oid+'').css({
+                                            backgroundPositionY:'-'+place+'px',
+                                            
+                                        });
+                                        console.log(place);
+                                    }else{
+                                        var options=$.extend(defaults,options)
+                                        
+                                        // var ev=ev||window.event;
+                                        var mousey=$(document).scrollTop()/3;
+                                        
+                                        
+                                        
+                                        var place=350+mousey;
+                                        $(''+options.oid+'').css({
+                                            backgroundPositionY:'-'+place+'px',
+                                            
+                                        });
+                                    }
+                                    $('.fa-angle-double-up').click(function(){
+                                        scroll(0, 0)
+                                    })
                                 });
                             </script>
                         </body>

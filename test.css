@@ -3,15 +3,44 @@ body {
   margin: 0;
   background: white;
   width: 100%;
-  min-width: 488px;
+  min-width: 572px;
+}
+.svg {
+  margin: 450px auto;
+  display: flex;
+}
+.active {
+  display: none;
+}
+h5 {
+  font-size: 52px;
+  color: #333;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 50px auto;
+  text-align: center;
+}
+h5 span {
+  font-weight: 100;
+  color: #555;
+}
+.fa-angle-double-up {
+  color: #3695ee;
+  position: fixed;
+  bottom: 35px;
+  right: 25px;
+  background: none;
+  border: none;
+  z-index: 1;
+  text-decoration-style: none;
+  transition: 1s all;
 }
 .title {
-  background: url('zzpic17327.jpg');
+  background: url('zzpic17327.jpg') no-repeat;
   overflow: hidden;
-  background-size: cover;
-  background-position-y: 0;
+  background-size: 200%;
   background-position-x: center;
-  height: 950px;
+  height: 1000px;
 }
 .title .shadow {
   background-color: rgba(0, 0, 0, 0.4);
@@ -55,13 +84,13 @@ body {
   font-size: 40px;
 }
 .navbar-header h2 span {
-  color: #ccc;
+  color: #fff;
   font-size: 32px;
 }
 .navbar {
   background: none;
   border: none;
-  max-width: 960px;
+  max-width: 1140px;
   margin: 0 auto;
   position: relative;
   top: 30px;
@@ -73,6 +102,7 @@ body {
   color: #eee;
   text-align: center;
   letter-spacing: 1px;
+  font-size: 15px;
 }
 .navbar-default .navbar-nav > li a:hover {
   color: white;
@@ -223,16 +253,12 @@ body {
 .animation4 {
   transform: translateX(400px);
 }
-.Choose-bottom .left {
-  height: 600px;
+.animation5 {
+  transform: translatey(-20px);
 }
-.Choose-bottom .left .stage {
+.Choose-bottom img {
   width: 100%;
-  height: 100%;
-  background: url(bpic11426.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  transition: 1s all;
 }
 .Choose-bottom p {
   margin: 20px 0 20px 0;
@@ -670,7 +696,7 @@ h3 {
   text-align: center;
 }
 h2 {
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 600;
   text-transform: capitalize;
   letter-spacing: .5px;
