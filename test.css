@@ -5,9 +5,14 @@ body {
   width: 100%;
   min-width: 572px;
 }
+div {
+  opacity: 0;
+}
 .svg {
-  margin: 450px auto;
+  margin: 400px auto;
+  left: 45%;
   display: flex;
+  position: fixed;
 }
 .active {
   display: none;
