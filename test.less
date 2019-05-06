@@ -323,7 +323,10 @@ h5{
                 margin: 0 auto;
                 ul{
                     width: 100%;
-                    
+                    li:hover img{
+                        transform: rotateY(360deg);
+                        transition: 1s all;
+                    }
                     .smallbox{
                         background: white;
                         box-shadow:  7px 7px 10px 0 rgba(76, 110, 245, .1);
@@ -612,6 +615,10 @@ h5{
         .Contact{
             
             overflow: hidden;
+            .right{
+                background: url('./zzpic11070.jpg');
+                background-size: cover;
+            }
         }
         .Contact h1{
             margin: 60px 0;
@@ -625,7 +632,7 @@ h5{
         }
         .Contact .box .right{
             
-            border:3px dotted #0079c1;
+            // border:3px dotted #0079c1;
             
             height: 400px;
             margin: 0 0 40px 0;

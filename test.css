@@ -302,6 +302,10 @@ h5 span {
 .Agentsbox .Agents ul {
   width: 100%;
 }
+.Agentsbox .Agents ul li:hover img {
+  transform: rotateY(360deg);
+  transition: 1s all;
+}
 .Agentsbox .Agents ul .smallbox {
   background: white;
   box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, 0.1);
@@ -566,6 +570,10 @@ input::-webkit-input-placeholder {
 .Contact {
   overflow: hidden;
 }
+.Contact .right {
+  background: url('zzpic11070.jpg');
+  background-size: cover;
+}
 .Contact h1 {
   margin: 60px 0;
 }
@@ -577,7 +585,6 @@ input::-webkit-input-placeholder {
   float: left;
 }
 .Contact .box .right {
-  border: 3px dotted #0079c1;
   height: 400px;
   margin: 0 0 40px 0;
 }
